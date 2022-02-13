@@ -1,0 +1,7 @@
+.btn-add-city, .btn-add-client, .btn-add-country, .btn-add-contact, .btn-add-industry{
+    margin: 10px;
+}
+
+.hidden{
+    display: none;
+}
