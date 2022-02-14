@@ -39,7 +39,6 @@ class IndustryController extends Controller
 
         ]);
 
-
         if ($validator -> passes()) {
 
             $industry = Industry::create([
@@ -164,7 +163,7 @@ class IndustryController extends Controller
     public function editModal( Request $request )
     {
 
-        $industry = Industry::find($request->industryId);
+        $industry = Industry::find($request -> industryId);
 
         return View::make( 'industry.segments.editindustry', ['industry' => $industry]);
 

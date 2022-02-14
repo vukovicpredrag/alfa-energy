@@ -16,7 +16,7 @@ class Contact extends Model
     public function contacts()
     {
 
-        return $this -> belongsToMany( 'App\Models\Client', 'contact_client', 'contact_id', 'client_id' );
+        return $this -> belongsToMany( 'App\Models\Client', 'contact_client', 'contact_id', 'client_id' )->withPivot('value');;
 
     }
 }

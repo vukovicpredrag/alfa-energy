@@ -32,7 +32,7 @@ class Client extends Model
     public function contacts()
     {
 
-        return $this -> belongsToMany( 'App\Models\Contact', 'contact_client', 'client_id', 'contact_id' );
+        return $this -> belongsToMany( 'App\Models\Contact', 'contact_client', 'client_id', 'contact_id' )->withPivot('value');
 
     }
 
