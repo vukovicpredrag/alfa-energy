@@ -31,7 +31,9 @@ composer install
 Create a copy of your .env file
 
 ```bash
-setup .env file
+cp .env.example .env
+
+*insert your database information (DB_PORT; DB_DATABASE; DB_USERNAME;DB_PASSWORD)
 ```
 *insert your database information (DB_PORT; DB_DATABASE; DB_USERNAME;DB_PASSWORD)
 
